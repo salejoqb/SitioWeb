@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol a Muerte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .match-card {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            background-color: white;
+        }
+        .match-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .accordion {
+            margin: 2rem 0;
+        }
+        .video-card {
+            margin: 1.5rem 0;
+        }
+        .carousel-item {
+            height: 400px;
+        }
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="Furbol.html">⚽ Futbol a Muerte</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Furbol.html">Pagina principal</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Futbol
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Conmebol.html">Noticias mundiales</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">Futbol a Muerte</h1>
+            
+            <div id="footballCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#footballCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#footballCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#footballCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#footballCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#footballCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="chelsea.jpg" class="d-block w-100" alt="Chelsea match">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Chelsea vs West Ham</h5>
+                            <p>Victoria contundente del Chelsea</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="partido 2.jpg" class="d-block w-100" alt="Aston Villa match">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Aston Villa vs Wolves</h5>
+                            <p>Remontada espectacular del Aston Villa</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="partido 3.jpg" class="d-block w-100" alt="Southampton match">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Southampton vs Ipswich</h5>
+                            <p>Empate dramático en el último minuto</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="gol 18.jpg" class="d-block w-100" alt="Goal celebration">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Momentos Destacados</h5>
+                            <p>Los mejores goles de la jornada</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="victory.jpg" class="d-block w-100" alt="Victory celebration">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Celebraciones</h5>
+                            <p>La emoción del fútbol en imágenes</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#footballCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#footballCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <p class="lead">Tu fuente principal de noticias sobre la Premier League y el fútbol mundial</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ¿Qué es el fútbol?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Para empezar toca aclarar que es el futbol, el futbol es un juego entre dos equipos de once jugadores cada uno, cuyo objetivo es hacer entrar en la portería contraria un balón que no puede ser tocado con las manos ni con los brazos, salvo por el portero en su área de meta.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        ¿Por qué es importante el fútbol?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        El futbol es un deporte que además de demostrar la unión entre varios países para el juego, también demuestra la unión de comunidades por una misma selección. Este deporte capaz de unir a varios hogares ha sido sinónimo de unión y de país, esto gracias a que todo el apoyo del pueblo se ve como uno en general.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Eventos en desarrollo
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Los eventos más recientes y los cuales se han estado trabajando son las eliminatorias del mundial 2026, la Premier League y el mundial femenino sub-17.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="match-card">
+            <h2 class="text-center mb-4">Chelsea vs West Ham</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="lead">El West Ham recibe al Chelsea en el encuentro correspondiente a la quinta jornada de la Premier League 2024/2025.</p>
+                    <p>Este partido se desarrolló con una clara ventaja para el Chelsea esto con 3 goles a su favor en tres momentos clave:</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item">⚽ Minuto 4: Gol de Nicolas Jackson (Asistencia: J.Sancho)</li>
+                        <li class="list-group-item">⚽ Minuto 18: Segundo gol de Nicolas Jackson</li>
+                        <li class="list-group-item">⚽ Minuto 47: Gol de Cole Palmer</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <img src="video1.jpg" class="card-img-top" alt="Match highlights">
+                        <div class="card-body">
+                            <h5 class="card-title">Resumen completo</h5>
+                            <p class="card-text">Video de ESPN fans con mayor información.</p>
+                            <a href="https://www.youtube.com/watch?v=X96jfUNeSjw&ab_channel=ESPNFans" class="btn btn-primary">Ver el video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="match-card">
+            <h2 class="text-center mb-4">Aston Villa vs Wolves</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="lead">Un partido que empezó reñido y terminó a favor del Aston Villa con una remontada espectacular.</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item">⚽ Minuto 25: Gol de Matheus Cunha (Wolves)</li>
+                        <li class="list-group-item">⚽ Minuto 73: Gol de Ollie Watkins (Aston Villa)</li>
+                        <li class="list-group-item">⚽ Minuto 88: Gol de Ezri Konsa (Aston Villa)</li>
+                        <li class="list-group-item">⚽ Minuto 90+4: Gol de Jhon Durán (Aston Villa)</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <img src="video2.jpg" class="card-img-top" alt="Match highlights">
+                        <div class="card-body">
+                            <h5 class="card-title">Resumen completo</h5>
+                            <p class="card-text">Un video más completo de ESPN fans aquí.</p>
+                            <a href="https://www.youtube.com/watch?v=yQ68Y-05O3A&ab_channel=ESPNFans" class="btn btn-primary">Ver el video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="match-card">
+            <h2 class="text-center mb-4">Southampton vs Ipswich</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="lead">Un emocionante empate con un gol en el último minuto.</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item">⚽ Minuto 9: Gol de Tyler Dibling (Southampton)</li>
+                        <li class="list-group-item">⚽ Minuto 90+5: Gol de Sam Morsy (Ipswich)</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                      <img src="video 3.jpg" class="card-img-top" alt="Match highlights">
+                      <div class="card-body">
+                          <h5 class="card-title">Resumen completo</h5>
+                          <p class="card-text">Un video más completo de ESPNFans aquí.</p>
+                          <a href="https://www.youtube.com/watch?v=6AO-JzSJpWk" class="btn btn-primary">Ver el video</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <div class="card mt-5 bg-light">
+    <div class="card-body text-center">
+        <h3>¡Mantente Informado!</h3>
+        <p>Suscríbete a nuestro newsletter para recibir las últimas noticias del fútbol mundial</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="d-flex gap-2">
+                    <input type="email" class="form-control" placeholder="Tu correo electrónico">
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="mt-5 py-4 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Futbol a Muerte</h5>
+                <p>Tu fuente principal de noticias sobre el fútbol mundial</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="Furbol.html" class="text-white">Inicio</a></li>
+                    <li><a href="Conmebol.html" class="text-white">Noticias</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Síguenos</h5>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="text-center">
+            <small>&copy; 2024 Futbol a Muerte. Todos los derechos reservados.</small>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
